@@ -17,12 +17,15 @@ html {
 /* Type will scale with document */
 h1 {
   font-size: 3rem;
+  font-family: $header-font-family;
 }
 h2 {
   font-size: 2.5rem;
+  font-family: $header-font-family;
 }
 h3 {
   font-size: 2rem;
+  font-family: $header-font-family;
 }
 
 /**
@@ -51,6 +54,32 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
 }
+
+body {
+    min-height: 100vh;
+    background-color: #DCD9D4;
+    background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%),
+        radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+}
+
+// .body-background {
+//     position: absolute;
+//     top: 0;
+//     height: 100vh;
+//     width: 100%;
+//     filter: blur(140px);
+//     background-color: transparent;
+//     background:
+//         linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
+//         linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
+//         radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%),
+//         url('../img/contemplation.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     background-blend-mode: screen;
+// }
 
 
 

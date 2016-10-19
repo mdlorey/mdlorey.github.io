@@ -1,0 +1,15 @@
+/*
+The main SCSS file for everything, yep
+*/
+
+@import "../../bower_components/bulma/bulma";
+
+@import "partials/variables";
+
+@import "partials/main";
+@import "partials/base";
+@import "partials/layout";
+@import "partials/syntax-highlighting";
+
+@import "partials/elements";
+@import "partials/modules";

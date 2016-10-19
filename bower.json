@@ -1,0 +1,21 @@
+{
+  "name": "mjk-jekyll-gulp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mike Lorey <mike.lorey@magicjack.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1",
+    "bulma": "^0.2.1"
+  }
+}

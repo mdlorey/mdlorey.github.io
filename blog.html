@@ -1,0 +1,12 @@
+---
+title: Blog
+permalink: "/blog/"
+layout: page
+---
+
+<h2>{{ page.title }}</h2>
+
+{% for my_post in site.posts %}
+    <span class="post-meta">{{ my_post.date | date: '%b %d, %Y' }}</span>
+    <h3><a class="post-link" href="{{ my_post.url | prepend: site.baseurl }}">{{ my_post.title }}</a></h3>
+{% endfor %}

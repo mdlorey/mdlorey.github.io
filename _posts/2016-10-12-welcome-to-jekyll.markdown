@@ -1,6 +1,6 @@
 ---
 title: Welcome to Jekyll!
-date: 2016-10-12 15:00:18 Z
+date: 2016-10-12 11:00:18 -04:00
 permalink: "/blog/:title/"
 categories:
 - jekyll

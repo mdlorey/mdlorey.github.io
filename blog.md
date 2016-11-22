@@ -1,7 +1,7 @@
 ---
 title: Blog
 permalink: "/blog/"
-position: 2
+position: 3
 layout: blog
 ---
 

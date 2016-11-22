@@ -1,3 +1,16 @@
+.site-header {
+    position: fixed;
+    width: 100%;
+    .navbar-brand,
+    .nav-link {
+        color: white;
+    }
+}
+
+body:not(#homepage) .site-header {
+    background-color: rgba(#797572, 0.9);
+}
+
 .hero {
     color: white;
     @include bgimagecover(transparent, '', center);

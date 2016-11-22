@@ -8,6 +8,9 @@ The main SCSS file for everything, yep
 @import "partials/variables";
 @import "partials/mixins";
 
+@import "vendor/animations";
+@import "vendor/hamburgers/hamburgers";
+
 @import "partials/main";
 @import "partials/base";
 @import "partials/layout";

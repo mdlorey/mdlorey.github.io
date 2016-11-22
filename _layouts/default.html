@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+    {% include head.html %}
 
-  <body>
+    {% capture page_id %}{% if page.url == '/' %}homepage{% else %}{{ page.url | slugify }}{% endif %}{% endcapture %}
 
-    {% include header.html %}
+    <body id="{{ page_id }}">
 
-    <div class="page-content">
-      <div class="wrapper">
         {{ content }}
-      </div>
-    </div>
 
-    {% include footer.html %}
+        <!-- JS -->
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/scripts.js"></script>
 
-  <!-- JS -->
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/scripts.js"></script>
-
-  </body>
+    </body>
 
 </html>

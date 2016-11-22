@@ -65,7 +65,7 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(autoprefixer({ browsers: [ 'ie >= 10', 'android >= 4.1' ] }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('/assets/css/maps'))
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('assets/css'));
@@ -77,12 +77,19 @@ gulp.task('sass', function () {
 gulp.task('concat', function() {
     var jsFiles = [
         paths.bower + 'jquery/dist/jquery.min.js',
+        paths.bower + 'underscore/underscore-min.js',
+        paths.bower + 'tether/dist/js/tether.min.js',
+        paths.bower + 'bootstrap/dist/js/bootstrap.min.js',
+        paths.bower + 'enquire/dist/enquire.min.js',
         paths.src + 'js/vendor/*.js',
         paths.src + 'js/scripts.js'
     ]
 
     return gulp.src(jsFiles)
+        .pipe(sourcemaps.init())
         .pipe(concat('scripts.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write('/assets/js/maps'))
         .pipe(gulp.dest('./_site/assets/js'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest(paths.dist + 'js'))

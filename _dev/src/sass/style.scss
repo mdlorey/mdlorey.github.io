@@ -2,9 +2,11 @@
 The main SCSS file for everything, yep
 */
 
-@import "../../bower_components/bulma/bulma";
+@import "../../bower_components/normalize-css/normalize";
+@import "../../bower_components/bootstrap/scss/bootstrap-flex";
 
 @import "partials/variables";
+@import "partials/mixins";
 
 @import "partials/main";
 @import "partials/base";

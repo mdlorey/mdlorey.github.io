@@ -17,18 +17,18 @@ defaults:
     permalink: "/blog/:title/"
 email: mike@rationallycreative.com
 description: A portfolio website
-baseurl: 
+baseurl:
 url: http://mikelorey.com/
 author:
   name: Mike Lorey
   email: mike@rationallycreative.com
-  uri: 
-  bio: 
-  facebook: 
+  uri:
+  bio:
+  facebook:
   twitter: mdlorey
-  linkedin: 
-  gplus: 
-  youtube: 
+  linkedin:
+  gplus:
+  youtube:
 future: true
 show_drafts: true
 lsi: false
@@ -36,11 +36,18 @@ limit_posts: 10
 permalink: pretty
 paginate: 10
 paginate_path: page:num
-excerpt_separator: 
+excerpt_separator:
 markdown: kramdown
 cloudinary:
   cloud_name: dw4i3sw5c
   verbose: true
+  presets:
+    default:
+      min_width: 320
+      max_width: 1600
+      fallback_max_width: 800
+      steps: 5
+      sizes: "(min-width: 50rem) 50rem, 90vw"
 gems:
 - jekyll-feed
 - jekyll-gist

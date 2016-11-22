@@ -38,16 +38,6 @@ paginate: 10
 paginate_path: page:num
 excerpt_separator:
 markdown: kramdown
-cloudinary:
-  cloud_name: dw4i3sw5c
-  verbose: true
-  presets:
-    default:
-      min_width: 320
-      max_width: 1600
-      fallback_max_width: 800
-      steps: 5
-      sizes: "(min-width: 50rem) 50rem, 90vw"
 gems:
 - jekyll-feed
 - jekyll-gist
@@ -56,7 +46,6 @@ gems:
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-sass-converter
-- jekyll-cloudinary
 exclude:
 - _dev
 - bower.json

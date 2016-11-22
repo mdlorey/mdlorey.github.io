@@ -1,10 +1,10 @@
 ---
-title: Blog
-permalink: "/blog/"
-layout: page
+layout: default
 ---
 
 <h2>{{ page.title }}</h2>
+
+{{ content }}
 
 {% for my_post in site.posts %}
     <span class="post-meta">{{ my_post.date | date: '%b %d, %Y' }}</span>

@@ -125,6 +125,10 @@ ul, ol {
     margin-left: $spacing-unit;
 }
 
+ul.nav {
+    margin-left: 0;
+}
+
 li {
     > ul,
     > ol {
@@ -160,6 +164,23 @@ a {
     }
 }
 
+a,
+a:hover,
+a:focus,
+a:active,
+button,
+button:hover,
+button:focus,
+button:active {
+    @include transition(all 0.3s ease-in-out);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    @include transition(all 0.3s ease-in-out);
+    text-decoration: none;
+}
 
 
 /**

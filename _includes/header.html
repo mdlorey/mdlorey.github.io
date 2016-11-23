@@ -2,7 +2,7 @@
     <nav class="navbar" id="main-nav">
         <div class="container">
             <a class="navbar-brand" href="/">
-                Lorem Ipsum
+                Mike Lorey
             </a>
             <button class="hamburger hamburger--squeeze navbar-toggler hidden-lg-up float-xs-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="hamburger-box">
@@ -10,8 +10,8 @@
                 </span>
             </button>
 
-            <div class="collapse navbar-toggleable-md" id="collapsingNavbar">
-                <ul class="nav navbar-nav float-lg-right">
+            <div class="collapse navbar-toggleable-md" id="navContainer">
+                <ul class="nav navbar-nav float-lg-right" id="navContents">
                     {% assign sorted_pages = site.pages | sort:"position", "last" %}
                     {% for page in sorted_pages %}
                         {% if page.title != "404: Page not found" and page.title != null %}
@@ -25,7 +25,5 @@
 
         </div>
     </nav>
-    <div id="mobile-nav" class="container">
-    </div>
-
+    <div class="container" id="mobile-nav"></div>
 </header>

@@ -28,3 +28,20 @@ $(function() {
     }
   });
 });
+
+// Toggle active class for hamburgers
+$('.hamburger').click(function() {
+	$(this).toggleClass('is-active');
+    $('#mobile-nav').toggleClass('visible');
+});
+
+// Move navbar contents to different container on mobile
+var navbarContents = $('#navContents');
+enquire.register("screen and (max-width:991px)", {
+    match : function() {
+		$(navbarContents).appendTo('#mobile-nav');
+    },
+    unmatch : function() {
+		$(navbarContents).appendTo('#navContainer');
+    }
+});

@@ -1,17 +1,17 @@
-// Set Headroom classes and offset
-$(document).ready(function() {
-	$(".site-header").headroom({
-	  "tolerance": 5,
-	  "offset": 205,
-	  "classes": {
-	    "initial": "animated",
-	    "pinned": "slideDown",
-	    "unpinned": "slideUp",
-	    "top": "headroom--top",
-	    "notTop": "headroom--not-top"
-	  }
-	});
-});
+// // Set Headroom classes and offset
+// $(document).ready(function() {
+// 	$(".site-header").headroom({
+// 	  "tolerance": 5,
+// 	  "offset": 205,
+// 	  "classes": {
+// 	    "initial": "animated",
+// 	    "pinned": "slideDown",
+// 	    "unpinned": "slideUp",
+// 	    "top": "headroom--top",
+// 	    "notTop": "headroom--not-top"
+// 	  }
+// 	});
+// });
 
 // Smooth page scroll to an anchor on the same page
 $(function() {

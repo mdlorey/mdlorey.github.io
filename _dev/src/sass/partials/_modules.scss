@@ -86,6 +86,7 @@ body:not(#homepage) .site-header {
 
 .hero {
     color: white;
+    max-height: 100vh;
     @include bgimagecover(transparent, '', center);
     .overlay {
         background-color: rgba(#797572, 0.5);

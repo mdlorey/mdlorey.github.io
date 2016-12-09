@@ -1,6 +1,7 @@
 ---
 title: Contact
 permalink: "/contact/"
+published: false
 position: 4
 layout: page
 ---

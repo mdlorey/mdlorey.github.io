@@ -104,7 +104,13 @@ gulp.task('concat', function() {
 gulp.task('watch', function () {
     gulp.watch(paths.src + 'sass/**/*.scss', ['sass']);
     gulp.watch(paths.src + 'js/**/*.js', ['concat']);
-    gulp.watch(['*.{html,md,markdown}', '_layouts/**/*.html', '_includes/**/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch([
+        '*.{html,md,markdown}',
+        '_layouts/**/*.html',
+        '_includes/**/*.html',
+        '_posts/*',
+        'blog/*'
+    ], ['jekyll-rebuild']);
 });
 
 /**

@@ -1,6 +1,14 @@
 ---
 title: Lorem ipsum 1
 date: 2016-12-09 16:11:00 -05:00
+categories:
+- Lorem
+- Ipsum
+- Dolor
+tags:
+- Lorem
+- Ipsum
+- Dolor
 featured-image: "/uploads/nvj-pdu98wu-aidan-meyer.jpg"
 ---
 

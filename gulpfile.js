@@ -65,7 +65,8 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(autoprefixer({ browsers: [ 'ie >= 10', 'android >= 4.1' ] }))
-        .pipe(sourcemaps.write('/assets/css/maps'))
+        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write('/assets/css/maps'))
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('assets/css'));
@@ -81,6 +82,7 @@ gulp.task('concat', function() {
         paths.bower + 'tether/dist/js/tether.min.js',
         paths.bower + 'bootstrap/dist/js/bootstrap.min.js',
         paths.bower + 'enquire/dist/enquire.min.js',
+        // paths.bower + 'animsition/dist/js/animsition.min.js',
         paths.src + 'js/vendor/*.js',
         paths.src + 'js/scripts.js'
     ]
@@ -102,7 +104,13 @@ gulp.task('concat', function() {
 gulp.task('watch', function () {
     gulp.watch(paths.src + 'sass/**/*.scss', ['sass']);
     gulp.watch(paths.src + 'js/**/*.js', ['concat']);
-    gulp.watch(['*.{html,md,markdown}', '_layouts/**/*.html', '_includes/**/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch([
+        '*.{html,md,markdown}',
+        '_layouts/**/*.html',
+        '_includes/**/*.html',
+        '_posts/*',
+        'blog/*'
+    ], ['jekyll-rebuild']);
 });
 
 /**

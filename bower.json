@@ -19,6 +19,7 @@
     "bootstrap": "v4.0.0-alpha.5",
     "underscore": "^1.8.3",
     "enquire": "^2.1.2",
-    "normalize-css": "^5.0.0"
+    "normalize-css": "^5.0.0",
+    "animsition": "^4.0.2"
   }
 }

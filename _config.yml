@@ -15,32 +15,33 @@ defaults:
   values:
     layout: post
     permalink: "/blog/:title/"
+    featured-image: ''
+    posts:
+    - 
+    - 
+    - 
 email: mike@rationallycreative.com
 description: A portfolio website
-baseurl:
-url: http://mikelorey.com/
+baseurl: 
+url: http://jekyll-gulp-siteleaf.siteleaf.net/
 author:
   name: Mike Lorey
   email: mike@rationallycreative.com
-  uri:
-  bio:
-  facebook:
+  uri: 
+  bio: 
+  facebook: 
   twitter: mdlorey
-  linkedin:
-  gplus:
-  youtube:
+  linkedin: 
+  gplus: 
+  youtube: 
 future: true
 show_drafts: true
 lsi: false
-limit_posts: 10
 permalink: pretty
-paginate: 10
-paginate_path: page:num
-excerpt_separator:
+paginate: 6
+paginate_path: "/blog/page:num/"
+excerpt_separator: 
 markdown: kramdown
-cloudinary:
-  cloud_name: dw4i3sw5c
-  verbose: true
 gems:
 - jekyll-feed
 - jekyll-gist
@@ -49,7 +50,6 @@ gems:
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-sass-converter
-- jekyll-cloudinary
 exclude:
 - _dev
 - bower.json

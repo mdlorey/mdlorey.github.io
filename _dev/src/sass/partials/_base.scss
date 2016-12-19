@@ -5,13 +5,13 @@
 
 /* Document level adjustments */
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
-@media (max-width: 900px) {
-  html { font-size: 15px; }
+@media (max-width: 991px) {
+  html { font-size: 16px; }
 }
-@media (max-width: 400px) {
-  html { font-size: 13px; }
+@media (max-width: 565px) {
+  html { font-size: 14px; }
 }
 
 /* Type will scale with document */
@@ -44,7 +44,10 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font-weight: $base-font-weight;
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    // font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -125,6 +128,10 @@ ul, ol {
     margin-left: $spacing-unit;
 }
 
+ul.nav {
+    margin-left: 0;
+}
+
 li {
     > ul,
     > ol {
@@ -160,6 +167,23 @@ a {
     }
 }
 
+a,
+a:hover,
+a:focus,
+a:active,
+button,
+button:hover,
+button:focus,
+button:active {
+    @include transition(all 0.3s ease-in-out);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    @include transition(all 0.3s ease-in-out);
+    text-decoration: none;
+}
 
 
 /**

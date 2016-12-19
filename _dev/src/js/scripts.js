@@ -15,18 +15,56 @@
 
 // Smooth page scroll to an anchor on the same page
 $(function() {
-  $('a[href*="#"]:not([href="#"]):not([data-toggle="collapse"]):not(.quote-link)').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+    $('a[href*="#"]:not([href="#"]):not([data-toggle="collapse"]):not(.quote-link)').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+$(function() {
+    $('#contactForm').submit(function(event) {
+        event.preventDefault();
+
+        var subscribeForm = $(this);
+        var subscribeButton = $('button[type=submit]', subscribeForm);
+
+        if ($("input[name='email']").val() === '') {
+            alert('Please enter an email address')
+            return
+        }
+
+        $.ajax({
+                url: subscribeForm.prop('action'),
+                type: 'POST',
+                crossDomain: true,
+                headers: {
+                    'accept': 'application/javascript',
+                },
+                data: $('#contactForm').serialize(),
+                beforeSend: function() {
+                    subscribeButton.prop('disabled', 'disabled');
+                }
+            })
+            .done(function(response) {
+                // You will do something WAY BETTER than alert
+                // because you are an awesome designer.
+                alert('Thanks for contacting me!');
+                subscribeButton.prop('disabled', false);
+            })
+            .fail(function(response) {
+                alert('Dang, something went wrong!');
+                subscribeButton.prop('disabled', false);
+            })
+
+    });
 });
 
 // $(function() {
@@ -56,17 +94,17 @@ $(function() {
 
 // Toggle active class for hamburgers
 $('.hamburger').click(function() {
-	$(this).toggleClass('is-active');
+    $(this).toggleClass('is-active');
     $('#mobile-nav').toggleClass('visible');
 });
 
 // Move navbar contents to different container on mobile
 var navbarContents = $('#navContents');
 enquire.register("screen and (max-width:991px)", {
-    match : function() {
-		$(navbarContents).appendTo('#mobile-nav');
+    match: function() {
+        $(navbarContents).appendTo('#mobile-nav');
     },
-    unmatch : function() {
-		$(navbarContents).appendTo('#navContainer');
+    unmatch: function() {
+        $(navbarContents).appendTo('#navContainer');
     }
 });

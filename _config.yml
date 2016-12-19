@@ -23,7 +23,7 @@ defaults:
 email: mike@rationallycreative.com
 description: A portfolio website
 baseurl: 
-url: http://jekyll-gulp-siteleaf.siteleaf.net/
+url: http://mikelorey.com
 author:
   name: Mike Lorey
   email: mike@rationallycreative.com

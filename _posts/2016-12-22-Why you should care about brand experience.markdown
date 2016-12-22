@@ -1,5 +1,5 @@
 ---
-title: Why should you care about brand experience?
+title: Why you should care about brand experience
 date: 2016-12-22 14:27:00 -05:00
 featured-image: "/uploads/iqyr7n67dhm-the-5th.jpg"
 ---

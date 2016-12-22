@@ -10,7 +10,7 @@ layout: default
         <div class="card-columns">
             {% for post in site.posts %}
                 <div class="card">
-                    <img class="card-img-top" src="{{ post.featured-image }}">
+                    <img class="card-img-top" src="https://res.cloudinary.com/djb863cyv/image/fetch/c_scale,w_545/{{ site.url }}{{ post.featured-image }}">
                     <div class="card-block">
                         <h4 class="card-title">
                             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

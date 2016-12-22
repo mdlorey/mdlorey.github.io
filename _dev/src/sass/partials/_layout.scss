@@ -20,3 +20,13 @@
 .list-group-flush {
     margin-left: 0;
 }
+
+.blog-post {
+    .featured-image {
+        max-width: 40%;
+    }
+    .float-right {
+        float: right;
+        margin: 0 0 30px 30px;
+    }
+}

@@ -17,30 +17,30 @@ defaults:
     permalink: "/blog/:title/"
     featured-image: ''
     posts:
-    -
-    -
-    -
+    - 
+    - 
+    - 
 email: mike@rationallycreative.com
 description: A portfolio website
-baseurl:
+baseurl: 
 url: http://mikelorey.com
 author:
   name: Mike Lorey
   email: mike@rationallycreative.com
-  uri:
-  bio:
-  facebook:
+  uri: 
+  bio: 
+  facebook: 
   twitter: mdlorey
-  linkedin:
-  gplus:
-  youtube:
+  linkedin: 
+  gplus: 
+  youtube: 
 future: true
 show_drafts: true
 lsi: false
 permalink: pretty
 paginate: 6
 paginate_path: "/blog/page:num/"
-excerpt_separator:
+excerpt_separator: 
 markdown: kramdown
 cloudinary:
   cloud_name: dw4i3sw5c

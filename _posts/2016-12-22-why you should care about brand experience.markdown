@@ -1,7 +1,7 @@
 ---
 title: Why you should care about brand experience
 date: 2016-12-22 14:27:00 -05:00
-featured-image: "/uploads/iqyr7n67dhm-the-5th.jpg"
+featured-image: "/uploads/nlaqs1em2pk-clem-onojeghuo.jpg"
 ---
 
 Today, customers can interact with brands from virtually any place at any time of day. They can collect information, ask questions, indicate preferences and make purchases. As they do, they are giving us the opportunity to serve them better, make suggestions and offer new options. So we need to shift our mental models from that of crafting messages to creating experiences.

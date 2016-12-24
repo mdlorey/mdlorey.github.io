@@ -5,14 +5,14 @@
 
 /* Document level adjustments */
 html {
-  font-size: 18px;
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1400 - 300)));
 }
-@media (max-width: 991px) {
-  html { font-size: 16px; }
-}
-@media (max-width: 565px) {
-  html { font-size: 14px; }
-}
+// @media (max-width: 991px) {
+//   html { font-size: 16px; }
+// }
+// @media (max-width: 565px) {
+//   html { font-size: 14px; }
+// }
 
 /* Type will scale with document */
 h1 {

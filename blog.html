@@ -5,14 +5,15 @@ position: 3
 layout: default
 ---
 
+{% capture cloudinary_string %}http://res.cloudinary.com/{{ site.cloudinary.cloud_name }}/image/fetch/{% endcapture %}
+
 <div class="interior-page">
     <div class="container">
         <div class="blog-posts row">
             {% for post in site.posts %}
-                <img style="display: none;" src="{{ post.featured-image }}" />
                 <div class="post-container col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img class="card-img-top" src="http://res.cloudinary.com/dw4i3sw5c/image/fetch/c_fill,g_auto,h_360,w_545/{{ site.url }}{{ post.featured-image }}">
+                        <div class="card-img-top b-lazy" data-src="{{cloudinary_string}}c_scale,w_540/{{site.url}}{{ post.featured-image }}"></div>
                         <div class="card-block">
                             <h4 class="card-title">
                                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

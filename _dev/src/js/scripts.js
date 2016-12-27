@@ -67,6 +67,17 @@ $(function() {
     });
 });
 
+$(function() {
+    var bLazy = new Blazy({
+        success: function(element) {
+            setTimeout(function() {
+                var parent = element.parentNode;
+                parent.className = parent.className.replace(/\bloading\b/,'');
+            }, 200);
+        }
+    });
+});
+
 // $(function() {
 //   $(".animsition").animsition({
 //     inClass: 'fade-in',

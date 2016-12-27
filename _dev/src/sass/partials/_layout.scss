@@ -26,8 +26,6 @@
         height: 230px;
         width: 100%;
         @include bgimagecover(white, '../img/blog-placeholder.jpg', center);
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
 
         overflow: hidden;
     }

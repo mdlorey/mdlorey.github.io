@@ -13,7 +13,7 @@ layout: default
             {% for post in site.posts %}
                 <div class="post-container col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <div class="card-img-top b-lazy" data-src="{{cloudinary_string}}c_scale,w_540/{{site.url}}{{ post.featured-image }}"></div>
+                        <div class="card-img-top b-lazy" data-src="{{cloudinary_string}}c_fill,w_540,h_360/{{site.url}}{{ post.featured-image }}"></div>
                         <div class="card-block">
                             <h4 class="card-title">
                                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
